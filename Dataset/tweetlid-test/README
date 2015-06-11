@@ -1,0 +1,70 @@
+Twitter Language Identification Workshop at SEPLN 2014
+
+Last update: 2014/06/30
+
+==============================================
+
+    Test Corpus file
+
+==============================================
+
+--> 'tweetLID-test_ids-no-annotations.tsv': The file contains the training corpus for the TweetLID 2014 shared task. It includes 19,993 tweet IDs and user names. The third column refers to the language of the tweet, which is replaced by a question mark "?" for this test set. The format of the file is the following:
+
+tweetId1<tab>user_screen_name1<tab>lang_annotation
+tweetId2<tab>user_screen_name2<tab>lang_annotation
+...
+
+Participants can use the file to download the actual text of the tweets. A python script 'download_tweets.py'
+is also provided to facilitate downloading the text of the tweets (see bellow).
+
+
+==============================================
+
+    Final submissions and evaluation
+  
+==============================================
+
+We have released an evaluation script for measuring the performance of the systems, which will be used to evaluate with our manual evaluation once the submission deadline is closed (tweetLID_eval.pl). The script computes Precision, Recall and F1 scores for the the following categories:
+ 
+    - 'es', 'en', 'eu', 'gl', 'pt, 'ca', 'amb' and 'und',
+   where
+         'amb' is representative of ambiguous tweets, which are those that can be identified as being written in several languages (annotated as lang1/lang2/.../lang_n in the reference) 
+         'und' is representative of those tweets annotated as 'other' and 'und'.
+        
+In addition, average Precision, Recall and F1 scores are computed taking into account the aforementioned categories.
+
+Those are the measures that will be used in the final evaluation.
+
+You can obtain the script here:
+http://komunitatea.elhuyar.org/tweetlid/files/2014/06/tweetLID_eval.pl
+
+For instructions on how to use the script type: 
+$ perl tweetLID_eval.pl -h
+
+The script accepts files with the following input format:
+   'tweetId<tab>language' 
+   where 'language' accepts the following strings: 
+         - 'lang1': single language. Possible values are: [es,en,gl,ca,eu,pt,und,other]
+         - 'lang1+lang2[+lang3]': multiple languages. Any combination of the abovementioned codes are allowed.
+    IMPORTANT: 
+          - 'lang1/lang2/lang3' type answer is not allowed. If such notation is found only the first language will be taken into account.
+          - When using multiple languages, ('lang1+lang2[+lang3]') a maximum number of 3 languages may be included. If more are found only the first 3 languages will be taken into account.
+
+The final submission must have this format as well.
+
+
+==============================================
+
+    Instructions for obtaining the tweets:
+
+==============================================
+
+-> download_tweets.py: This python script will take a file in the "TREC Microblog Track" format and wil try to retrieve the original corresponding tweets. Example call:
+
+        % python download_tweets.py tweetLID-test_ids.tsv > output.txt
+
+    Note: Some of the tweets may not be available anymore due to several reasons (e.g., the have been erased, or the user account has become private). If a tweet can not be retrieved the script will output the message "Not Available". Those tweets will be left out of the corpus for the final evaluation. 
+
+    Dependencies: download_tweets.py uses the beautifulSoup 4 (http://www.crummy.com/software/BeautifulSoup/) Python library. 
+
+   The download_tweets.py script is a version of the one used in the SemEval Campaign (http://www.cs.york.ac.uk/semeval-2013/), adapted by Arturo Montejo (amontejo@ujaen.es) and Iñaki San Vicente (i.sanvicente@elhuyar.com) to use it with our format. Thanks!

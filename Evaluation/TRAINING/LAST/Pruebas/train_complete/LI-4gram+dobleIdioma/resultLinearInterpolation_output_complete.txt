@@ -1,0 +1,27 @@
+
+ RESULTS ONLY taking into account SUBMITTED RESULTS IN THE REFERENCE: 
+Category pt : P => 0.602374746597162 , R => 0.966093822573154 , F => 0.742062076346771 
+Category und : P => 0.4375 , R => 0.269230769230769 , F => 0.333333333333333 
+Category amb : P => 1 , R => 0.941690962099125 , F => 0.96996996996997 
+Category es : P => 0.857099360600832 , R => 0.959223080417992 , F => 0.905290239588358 
+Category ca : P => 0.722540343571057 , R => 0.910761154855643 , F => 0.805805515239478 
+Category gl : P => 0.191036414565826 , R => 0.64828897338403 , F => 0.295110341843358 
+Category en : P => 0.817796610169492 , R => 0.826906598114824 , F => 0.822326374094589 
+Category eu : P => 0.494936708860759 , R => 0.751923076923077 , F => 0.596946564885496 
+
+Global results : P => 0.640410523045641 , R => 0.784264804699827 , F => 0.683855551912669 
+
+Submitted run contains => 14870 tweets. From those 14870 are in the reference. 
+Provided reference has => 14990 tweets. From those 120 tweets were left unanswered. 
+
+ RESULTS taking into account ALL TWEETS in the reference (unanswered tweets affect Recall and Fscore negatively) 
+Category pt : P => 0.602374746597162 , R => 0.960739030023095 , F => 0.740477038091848 
+Category und : P => 0.4375 , R => 0.267942583732057 , F => 0.332344213649852 
+Category amb : P => 1 , R => 0.933526011560694 , F => 0.965620328849028 
+Category es : P => 0.857099360600832 , R => 0.950692333671057 , F => 0.901473099914603 
+Category ca : P => 0.722540343571057 , R => 0.906005221932115 , F => 0.803938604112366 
+Category gl : P => 0.191036414565826 , R => 0.643396226415094 , F => 0.294600431965443 
+Category en : P => 0.817796610169492 , R => 0.81918505942275 , F => 0.818490245971162 
+Category eu : P => 0.494936708860759 , R => 0.744761904761905 , F => 0.59467680608365 
+
+Global results : P => 0.640410523045641 , R => 0.778945908468733 , F => 0.681719591172291 

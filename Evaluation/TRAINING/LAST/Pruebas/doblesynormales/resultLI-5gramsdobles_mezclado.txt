@@ -1,0 +1,27 @@
+
+ RESULTS ONLY taking into account SUBMITTED RESULTS IN THE REFERENCE: 
+Category pt : P => 0.666666666666667 , R => 1 , F => 0.8 
+Category und : P => 0 , R => 0 , F => 0 
+Category amb : P => 0 , R => 0 , F => 0 
+Category es : P => 1 , R => 0.68 , F => 0.80952380952381 
+Category ca : P => 1 , R => 0.833333333333333 , F => 0.909090909090909 
+Category gl : P => 1 , R => 1 , F => 1 
+Category en : P => 1 , R => 1 , F => 1 
+Category eu : P => 1 , R => 1 , F => 1 
+
+Global results : P => 0.708333333333333 , R => 0.689166666666667 , F => 0.68982683982684 
+
+Submitted run contains => 35 tweets. From those 35 are in the reference. 
+Provided reference has => 35 tweets. From those 0 tweets were left unanswered. 
+
+ RESULTS taking into account ALL TWEETS in the reference (unanswered tweets affect Recall and Fscore negatively) 
+Category pt : P => 0.666666666666667 , R => 1 , F => 0.8 
+Category und : P => 0 , R => 0 , F => 0 
+Category amb : P => 0 , R => 0 , F => 0 
+Category es : P => 1 , R => 0.68 , F => 0.80952380952381 
+Category ca : P => 1 , R => 0.833333333333333 , F => 0.909090909090909 
+Category gl : P => 1 , R => 1 , F => 1 
+Category en : P => 1 , R => 1 , F => 1 
+Category eu : P => 1 , R => 1 , F => 1 
+
+Global results : P => 0.708333333333333 , R => 0.689166666666667 , F => 0.68982683982684 

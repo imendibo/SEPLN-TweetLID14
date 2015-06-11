@@ -1,0 +1,29 @@
+
+ RESULTS ONLY taking into account SUBMITTED RESULTS IN THE REFERENCE: 
+Category pt : P => 0 , R => 0 , F => 0 
+Category und : P => 0 , R => 0 , F => 0 
+Category amb : P => 0 , R => 0 , F => 0 
+Category es : P => 0 , R => 0 , F => 0 
+Category ca : P => 0 , R => 0 , F => 0 
+Category gl : P => 0 , R => 0 , F => 0 
+Category ? : P =>  , R => 0 , F => 0 
+Category en : P => 0 , R => 0 , F => 0 
+Category eu : P => 0 , R => 0 , F => 0 
+
+Global results : P => 0 , R => 0 , F => 0 
+
+Submitted run contains => 202 tweets. From those 202 are in the reference. 
+Provided reference has => 202 tweets. From those 0 tweets were left unanswered. 
+
+ RESULTS taking into account ALL TWEETS in the reference (unanswered tweets affect Recall and Fscore negatively) 
+Category pt : P => 0 , R => 0 , F => 0 
+Category und : P => 0 , R => 0 , F => 0 
+Category amb : P => 0 , R => 0 , F => 0 
+Category es : P => 0 , R => 0 , F => 0 
+Category ca : P => 0 , R => 0 , F => 0 
+Category gl : P => 0 , R => 0 , F => 0 
+Category ? : P =>  , R => 0 , F => 0 
+Category en : P => 0 , R => 0 , F => 0 
+Category eu : P => 0 , R => 0 , F => 0 
+
+Global results : P => 0 , R => 0 , F => 0 
